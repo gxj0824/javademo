@@ -1,4 +1,6 @@
-package com.tqym.demo1_scanner;
+package com.tqym.basicdemo.demo1_scanner;
+
+import org.junit.Test;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -6,24 +8,17 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 /**
+/**
  * @ClassName Scanner
  * @Description 测试scanner类
- * @Author guanxiaojing
+ * @Author 洛城天使
  * @Date: 2021/9/12 22:50
  * @Version 1.0
  */
 public class ScannerDemo {
-    public static void main(String[] args) {
-        try {
-            testScanner();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void testScanner() throws IOException {
+    @Test
+    public void testScanner() throws IOException {
         String filePath = "E:\\demofile\\javatest.txt";
-
         PrintWriter writer = new PrintWriter(filePath, "UTF-8");
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入一些字：");
