@@ -15,47 +15,52 @@ import java.util.Map;
  */
 public class JsonUtil {
 
-    //java对象转json字符串
+    /**
+     * java对象转json字符串
+     */
     public static String objectToJson(Object object) {
-        String jsonString = JSONObject.toJSONString(object);
-        return jsonString;
+        return JSONObject.toJSONString(object);
     }
 
-    //map转json字符串
+    /**
+     * map转json字符串
+     */
     public static String mapToJson(Map<String, Object> map) {
-        String jsonString = JSONObject.toJSONString(map);
-        return jsonString;
+        return JSONObject.toJSONString(map);
     }
 
-    //java对象转json对象
+
+    /**
+     * java对象转json对象
+     */
     public static JSONObject objectToJsonObject(Object object) {
         Object obj = JSON.toJSON(object);
-        JSONObject jsonObject = JSONObject.parseObject(obj.toString());
-        return jsonObject;
+        return JSONObject.parseObject(obj.toString());
     }
 
-    //map转json对象
+    /**
+     * map转json对象
+     */
     public static JSONObject mapToJsonObject(Map<String, Object> map) {
         Object obj = JSON.toJSON(map);
-        JSONObject jsonObject = JSONObject.parseObject(obj.toString());
-        return jsonObject;
+        return JSONObject.parseObject(obj.toString());
     }
 
-    //json对象转map
+    /**
+     * json对象转map
+     */
     public static Map jsonObjectToMap(JSONObject jsonObject) {
-        Map<String, Object> map = new HashMap<>();
-        map.putAll(jsonObject);
-        return map;
+        return new HashMap<>(jsonObject);
     }
 
-    //json字符串转map:先转成JSONObject
-    public static Map jsonToMap(String json_str) {
+    /**
+     * json字符串转map
+     */
+    public static Map jsonToMap(String jsonStr) {
         //1.json字符串先转成JSONObject
-        JSONObject jsonObject = JSONObject.parseObject(json_str);
+        JSONObject jsonObject = JSONObject.parseObject(jsonStr);
         //2.json对象转map
-        Map<String, Object> map = new HashMap<>();
-        map.putAll(jsonObject);
-        return map;
+        return new HashMap<>(jsonObject);
     }
 
 }
