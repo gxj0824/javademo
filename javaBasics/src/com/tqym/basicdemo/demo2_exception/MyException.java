@@ -1,8 +1,5 @@
 package com.tqym.basicdemo.demo2_exception;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 /**
  * @ClassName MyException
  * @Description 自定义异常类
@@ -10,7 +7,7 @@ import lombok.EqualsAndHashCode;
  * @Date 2021/9/21 16:25
  * @Version 1.0
  */
-@EqualsAndHashCode(callSuper = true)
+/*@EqualsAndHashCode(callSuper = true)
 @Data
 public class MyException extends RuntimeException {
 
@@ -25,4 +22,4 @@ public class MyException extends RuntimeException {
         this.method = method;
         this.description = description;
     }
-}
+}*/
