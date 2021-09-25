@@ -1,5 +1,6 @@
 package com.tqym.basicdemo.demo1_scanner;
 
+import com.tqym.utils.Constant;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -18,7 +19,7 @@ import java.util.Scanner;
 public class ScannerDemo {
     @Test
     public void testScanner() throws IOException {
-        String filePath = "E:\\demofile\\javatest.txt";
+        String filePath = Constant.E_JAVA_TEST_TXT;
         PrintWriter writer = new PrintWriter(filePath, "UTF-8");
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入一些字：");

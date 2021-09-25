@@ -1,5 +1,6 @@
 package com.tqym.basicdemo.demo2_exception;
 
+import com.tqym.utils.Constant;
 import org.junit.Test;
 
 import java.io.FileInputStream;
@@ -27,7 +28,7 @@ public class ExceptionDemo {
         FileWriter fw = null;
         try {
             //可能会产出异常的代码
-            fw = new FileWriter("E:\\demofile\\javatest.txt", true);
+            fw = new FileWriter(Constant.E_JAVA_TEST_TXT, true);
             for (int i = 0; i < 5; i++) {
                 fw.write("可不要忘记，你要相信你自己！" + i + "\r\n");
             }
