@@ -57,9 +57,9 @@ public class ExceptionDemo {
     @Test
     public void testIOTryCatch2() {
         try (//1.创建一个字节输入流对象,构造方法中绑定要读取的数据源
-             FileInputStream fis = new FileInputStream("C:\\Users\\guanxiaojing\\Pictures\\桌面壁纸\\Kobe1.jpg");
+             FileInputStream fis = new FileInputStream(Constant.C_COPY_KOBE1_JPG);
              //2.创建一个字节输出流对象,构造方法中绑定要写入的目的地
-             FileOutputStream fos = new FileOutputStream("E:\\demofile\\Kobe2.jpg");) {
+             FileOutputStream fos = new FileOutputStream(Constant.E_PATH + "Kobe3.jpg")) {
 
             //一次读取一个字节写入一个字节的方式
             //3.使用字节输入流对象中的方法read读取文件

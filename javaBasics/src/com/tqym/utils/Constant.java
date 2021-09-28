@@ -9,4 +9,7 @@ package com.tqym.utils;
  */
 public class Constant {
     public static final String E_JAVA_TEST_TXT = "E:\\demofile\\javatest.txt";
+    public static final String E_PATH = "E:\\demofile\\";
+    public static final String C_COPY_KOBE1_JPG = "C:\\Users\\guanxiaojing\\Pictures\\桌面壁纸\\Kobe1.jpg";
+    public static final String C_PATH = "C:\\Users\\guanxiaojing\\Pictures\\桌面壁纸\\";
 }
