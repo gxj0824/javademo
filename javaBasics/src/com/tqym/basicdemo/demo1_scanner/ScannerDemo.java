@@ -23,12 +23,12 @@ public class ScannerDemo {
         PrintWriter writer = new PrintWriter(filePath, "UTF-8");
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入一些字：");
-        boolean falg = true;
-        while (falg) {
+        boolean flag = true;
+        while (flag) {
             String str = scanner.nextLine();
             if ("exit".equals(str)) {
                 System.out.println("====================");
-                falg = false;
+                flag = false;
                 writer.close();
             } else {
                 writer.println(str);
